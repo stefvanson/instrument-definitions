@@ -1,7 +1,7 @@
 VERSION 1 # Currently, this should only be 1.
 
 # Supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
-TRACKNAME RD-9
+TRACKNAME RD-9 (PT 2)
 
 # Can be POLY, DRUM, MPE, or NULL
 TYPE DRUM
@@ -27,23 +27,26 @@ INCHAN NULL
 # NAME supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
 # Please note this section will be discarded for tracks which are not DRUM tracks
 [DRUMLANES]
-1:NULL:10:36 KICK
-2:NULL:10:40 SNARE
-3:NULL:10:45 LO TOM
-4:NULL:10:47 MID TOM
-5:NULL:10:50 HI TOM
-6:NULL:10:39 CLAP
-7:NULL:10:46 OPEN HH
-8:NULL:10:42 CLSD HH
-# X:NULL:10:37 RIMSHOT
-# X:NULL:10:56 COWBELL
-# X:NULL:10:51 RIDE
-# X:NULL:10:49 CRASH
+1:NULL:10:37 RIMSHOT
+2:NULL:10:56 COWBELL
+3:NULL:10:51 RIDE
+4:NULL:10:49 CRASH
 [/DRUMLANES]
+
+
+# PC
+# Syntax: NUMBER NAME
+# number must be either:
+#   - A number (for simple PC)
+#   - Three numbers, delimited by ':', which represent PC:MSB:LSB. You can put 'NULL' to not set the MSB/LSB.
+# PC must be between 1...128
+# MSB/LSB must be between 0...127
+[PC]
+[/PC]
 
 # This section will be readable from Hapax.
 [COMMENT]
-Behringer RD-9 by Stef van Son
+Behringer RD-9
 Note that these are not all drum sounds. Hapax allows for max 8.
-These are the most used. See RD-9 part 2 for the others.
+These are the least used. See RD-9 part 1 for the others.
 [/COMMENT]
