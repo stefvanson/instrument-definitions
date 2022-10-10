@@ -1,0 +1,53 @@
+VERSION 1 # Currently, this should only be 1.
+TRACKNAME Analog4-1
+TYPE POLY
+OUTPORT B
+OUTCHAN 5
+INPORT NULL
+INCHAN 5
+
+[PC]
+[/PC]
+
+# CC
+# Syntax: CC_NUMBER NAME or CC_NUMBER:DEFAULT=xx NAME
+# DEFAULT_VALUE must be a valid number between 0 and 127
+[CC]
+18 F1 FREQ
+89 F1 RESO
+86 F1 OD
+19 F2 FREQ
+90 F2 RESO
+3 PERF A
+4 PERF B
+8 PERF C
+9 PERF D
+11 PERF E
+64 PERF F
+65 PERF G
+66 PERF H
+67 PERF I
+68 PERF J
+95 TRACK LEVEL
+70 OSC 1 WAVE
+72 OSC 1 PW
+77 NOISE LVL
+79 OSC 2 WAVE
+81 OSC 2 PW
+84 SYNC AMT
+85 BEND AMT
+5 SLIDE TIME
+88 VIB SPD
+104 ENVA A
+105 ENVA D
+106 ENVA S
+107 ENVA R
+91 CHORUS SND
+92 DEL SND
+93 REVERB SND
+[/CC]
+
+# This section will be readable from Hapax.
+[COMMENT]
+Analog Four originally created by josker @ squarp.community
+[/COMMENT]
