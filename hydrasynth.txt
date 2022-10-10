@@ -1,0 +1,180 @@
+VERSION 1 # Currently, this should only be 1.
+TRACKNAME HydraSynth
+TYPE POLY
+OUTPORT A
+OUTCHAN 3
+INPORT NULL
+INCHAN NULL
+
+
+# ASSIGN
+# Mapping the first 6 Macro knobs
+[ASSIGN]
+1 CC:16
+2 CC:17
+3 CC:18
+4 CC:19
+5 CC:20
+6 CC:21
+7 CC:22
+8 CC:23
+[/ASSIGN]
+
+# CC
+# Syntax: CC_NUMBER NAME or CC_NUMBER:DEFAULT=xx NAME
+# DEFAULT_VALUE must be a valid number between 0 and 127
+[CC]
+62 Amp LFO2amt
+
+106 ARP Division
+107 ARP Gate
+108 ARP Mode
+109 ARP Ratchet
+110 ARP Chance
+120 ARP Octave
+122 ARP Length
+
+14 Delay Feedback
+15 Delay Time
+63 Delay Wet tone
+92 Delay Dry/Wet
+
+81 ENV1 Attack
+82 ENV1 Decay
+83 ENV1 Sustain
+84 ENV1 Release
+
+85 ENV2 Attack
+86 ENV2 Decay
+87 ENV2 Sustain
+88 ENV2 Release
+
+89 ENV3 Attack
+90 ENV3 Decay
+96 ENV3 Sustain
+97 ENV3 Release
+
+25 ENV4 Attack
+27 ENV4 Decay
+124 ENV4 Release
+125 ENV4 Sustain
+
+102 ENV5 Attack
+103 ENV5 Decay
+104 ENV5 Sustain
+105 ENV5 Release
+
+50 F1 Drive
+51 F1 Keytrack
+52 F1 LFO1amt
+53 F1 Vel Env
+54 F1 ENV1amt
+71 F1 Res
+74 F1 Cutoff
+
+55 F2 Cutoff
+56 F2 Res
+57 F2 Type
+58 F2 Keytrack
+59 F2 LFO1amt
+60 F2 Vel Env
+61 F2 ENV1amt
+
+70 LFO1 Gain
+72 LFO1 Rate
+
+28 LFO2 Gain
+73 LFO2 Rate
+
+75 LFO3 Gain
+76 LFO3 Rate
+
+77 LFO4 Gain
+78 LFO4 Rate
+
+79 LFO5 Gain
+80 LFO5 Rate
+
+16 Macro 1
+17 Macro 2
+18 Macro 3
+19 Macro 4
+20 Macro 5
+21 Macro 6
+22 Macro 7
+23 Macro 8
+
+03 Noise Vol
+08 Noise Pan
+
+09 Ring Mod Vol
+10 Ring Mod Pan
+43 RM12 Depth
+
+44 OSC1 Vol
+45 OSC1 Pan
+
+46 OSC2 Vol
+47 OSC2 Pan
+
+48 OSC3 Vol
+49 OSC3 Pan
+
+114 OSC 3 FRate
+115 Noise FRate
+116 Ring Mod FRate
+118 OSC1 FRate
+119 OSC2 FRate
+
+29 Mut1 Ratio
+30 Mut1 Depth
+31 Mut1 Dry/Wet
+
+33 Mut2 Ratio
+34 Mut2 Depth
+35 Mut2 Dry/Wet
+
+36 Mut3 Ratio
+37 Mut3 Depth
+39 Mut3 Dry/Wet
+
+40 Mut4 Ratio
+41 Mut4 Depth
+42 Mut4 Dry/Wet
+
+24 OSC1 wavscan
+111 OSC 1 Cent
+
+26 OSC2 WavScan
+112 OSC 2 Cent
+
+113 OSC 3 Cent
+
+68 POST Param1
+69 POST Param2
+94 POST Mix
+
+12 PRE Param1
+13 PRE Param2
+93 PRE Mix
+
+65 Reverb Time
+67 Reverb Tone
+91 Reverb Dry/Wet
+
+01 ModWheel
+07 Volume
+11 Exp Pedal
+64 Sus pedal
+123 note off
+05 GlideTime
+66 Glide
+95 Detune
+117 StWidth
+[/CC]
+
+
+# This section will be readable from Hapax.
+[COMMENT]
+Hydrasynth
+[/COMMENT]
