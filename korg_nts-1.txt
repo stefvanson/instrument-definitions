@@ -37,6 +37,17 @@ INCHAN NULL
 # Syntax: CC_NUMBER NAME or CC_NUMBER:DEFAULT=xx NAME
 # DEFAULT_VALUE must be a valid number between 0 and 127
 [CC]
+90 Rvrb Type
+34 Rvrb Time
+35 Rvrb Depth
+36 Rvrb Mix
+89 Dly Type
+30 Dly Time
+31 Dly Depth
+33 Dly Mix
+88 Mod Type
+28 Mod Time
+29 Mod Depth
 53 OSC Type
 54 OSC Shape
 55 OSC Alt
@@ -50,17 +61,6 @@ INCHAN NULL
 21 Trmlo Rate
 24 LFO Rate
 26 LFO Depth
-88 Mod Type
-28 Mod Time
-29 Mod Depth
-89 Dly Type
-30 Dly Time
-31 Dly Depth
-33 Dly Mix
-90 Rvrb Type
-34 Rvrb Time
-35 Rvrb Depth
-36 Rvrb Mix
 45 FSweep Depth
 46 FSweep Rate
 117 ARP Pattern
@@ -105,17 +105,17 @@ INCHAN NULL
 #### For CV, value must be between 1 and 4
 #### For NRPN, value must be MSB:LSB:DEPTH, with both lsb & msb bebtween 0 and 127, and DEPTH being either 7 or 14
 [AUTOMATION]
-CC:88
-CC:28
-CC:29
-CC:89
-CC:30
-CC:31
-CC:33
-CC:90
-CC:34
-CC:35
-CC:36
+CC:90  # Rvrb Type
+CC:34  # Rvrb Time
+CC:35  # Rvrb Depth
+CC:36  # Rvrb Mix
+CC:89  # Dly Type
+CC:30  # Dly Time
+CC:31  # Dly Depth
+CC:33  # Dly Mix
+CC:88  # Mod Type
+CC:28  # Mod Time
+CC:29  # Mod Depth
 [/AUTOMATION]
 
 # This section will be readable from Hapax.
